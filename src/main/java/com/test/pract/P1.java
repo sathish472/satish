@@ -1,6 +1,6 @@
 package com.test.pract;
 
 @FunctionalInterface
-public interface P {
+public interface P1 {
 	public void m1();
 }
