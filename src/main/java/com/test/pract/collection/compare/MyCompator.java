@@ -1,6 +1,8 @@
-package com.test.pract.collection;
+package com.test.pract.collection.compare;
 
 import java.util.Comparator;
+
+import com.test.pract.collection.Student;
 
 public class MyCompator<T> implements Comparator<Student> {
 

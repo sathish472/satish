@@ -15,6 +15,12 @@ class Myrunable implements Runnable{
 		}
 	}
 	
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("\n Child thread finalize");
+		super.finalize();
+	}
+	
 }
 
 
@@ -41,14 +47,22 @@ public class Thdemo {
 		for(int i=0; i<5;i++) {
 			try {
 				Thread.sleep(50);
+				System.gc();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println("\n P thread");	
+			System.out.println("\n P thread");
+			
 			}
 		
 
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("\n Main thread finalize");
+		super.finalize();
 	}
 
 }
