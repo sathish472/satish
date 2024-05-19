@@ -29,3 +29,4 @@ replay_pid*
 *.classpath
 *.factorypath
 *.project
+*..gitignore.bak

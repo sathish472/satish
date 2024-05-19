@@ -12,7 +12,7 @@ public class Test {
 		 * if(a[j]<a[j+1]) { int temp=a[j]; a[j]=a[j+1]; a[j+1]=temp; } } } for(int
 		 * i=0;i<a.length;i++) { System.out.println("--> "+a[i]); }
 		 */
-		int[] a= {1,2,3,4,5,6,7,2,5,3,10};
+		//int[] a= {1,2,3,4,5,6,7,2,5,3,10};
 		int big=a[0];
 		int big2=0;
 		for(int i=1; i<a.length;i++) {

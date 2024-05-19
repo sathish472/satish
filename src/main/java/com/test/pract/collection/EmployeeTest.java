@@ -55,7 +55,6 @@ public class EmployeeTest {
 		
 		List<Employee> el2 = el.parallelStream().map(f).filter(p1.negate()).collect(Collectors.toList());
 		
-		el.parallelStream().distinct()
 		
 		for(Employee e:el2) {
 			System.out.println(e.toString());
