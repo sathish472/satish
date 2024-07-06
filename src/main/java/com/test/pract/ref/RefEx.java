@@ -10,9 +10,9 @@ import com.fasterxml.jackson.databind.JsonMappingException.Reference;
 public class RefEx {
 
 	public static void main(String[] args) {
-		 //strongRef();
-		 //weakRef();
-		 //softRef();
+		 strongRef();
+		 weakRef();
+		 softRef();
 		photonRef();
 	}
 	
