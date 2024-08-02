@@ -20,7 +20,6 @@ public class RemoveDuplicatesAndSortWithStreams {
                     .distinct()
                     .sorted()
                     .mapToObj(c -> String.valueOf((char) c))
-                    .max
                     .collect(Collectors.joining());
         
     }
